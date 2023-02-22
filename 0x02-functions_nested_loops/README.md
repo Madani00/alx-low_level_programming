@@ -9,8 +9,8 @@
 This project introduces functions and nested loops in C programming. Each .c file contains a different function while the holberton.h file contains all the function prototypes.
 
 ## Description of what each file does
-prints "-putchar"
-prints the alphabet, in lowercase
+0.prints "-putchar"
+1. prints the alphabet, in lowercase
 prints 10 times the alphabet, in lowercase
 checks for lowercase character; returns 1 if true and 0 if false
 checks for alphabetic character; returns 1 if true and 0 if false
