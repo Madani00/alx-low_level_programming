@@ -1,10 +1,10 @@
-### 0x02. C - Functions, nested loops
+# 0x02. C - Functions, nested loops
 ## Authors
-. Madani
+* Madani
 ## Requirements
-C programming language
-Ubuntu 14.04 LTS
-gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
+* C programming language
+* Ubuntu 14.04 LTS
+* gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
 ## Synopsis
 This project introduces functions and nested loops in C programming. Each .c file contains a different function while the holberton.h file contains all the function prototypes.
 
