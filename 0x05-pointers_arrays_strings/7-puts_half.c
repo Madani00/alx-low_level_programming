@@ -5,9 +5,11 @@
  * @str: string
  * Return: void
  */
+
 void puts_half(char *str)
 {
 	int i, j, max;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
