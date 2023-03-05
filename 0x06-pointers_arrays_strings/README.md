@@ -35,4 +35,4 @@
     - if size is 0 or less, the output should be a new line only \n
 
 ## Authors
-* El Madani A mchart
+* El Madani Amchart
