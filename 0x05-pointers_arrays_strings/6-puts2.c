@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts2 - prints every second character of a string, followed by a new line
@@ -7,10 +8,11 @@
 
 void puts2(char *str)
 {
-	int i;
+	int i, c = strlen(str);
 
-	for (i = 0; str[i] != '\0'; i += 2)
+	for (i = 0; i < c; i++)
 	{
+		if (i % 2 == 0)
 		_putchar(str[i]);
 	}
 	_putchar('\n');
