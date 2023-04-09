@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints the number of arguments passed into it.
+ * main - a program that prints all arguments it receives.
  * @argc: argument count
  * @argv: argument vector
  * Return: 0
@@ -9,10 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argv;
+	int i;
 
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
