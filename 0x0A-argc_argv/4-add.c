@@ -13,19 +13,22 @@ int main(int argc, char *argv[])
 {
 	int sum = 0, i;
 
-	for (i = 1; argv[i]; ++i)
-	{
-		if (!isdigit(*argv[i]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += atoi(argv[i]);
-	}
-	printf("%d\n", sum);
 	if (argc < 2)
 	{
 		printf("%d\n", argc - 1);
+	}
+	else
+	{
+		for (i = 1; argv[i]; ++i)
+		{
+			if (!isdigit(*argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			sum += atoi(argv[i]);
+		}
+		printf("%d\n", sum);
 	}
 	return (0);
 }
