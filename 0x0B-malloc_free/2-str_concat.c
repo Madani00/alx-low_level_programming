@@ -11,23 +11,35 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *py;
-	int len = strlen(s1);
-	int lent = strlen(s2);
+	int length1, length2, i;
+	char *p;
 
-	py = malloc(sizeof(char) * len + lent);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (py == NULL)
+	length1 = 0;
+	while (*(s1 + length1) != '\0')
 	{
-		return (NULL);
+		length1++;
 	}
 
-	if (s1 == NULL || s2 == NULL)
+	length2 = 0;
+	while (*(s2 + length2) != '\0')
 	{
-		return (NULL);
+		length2++;
 	}
-	strcat(py, s1);
-	strcat(py, s2);
 
-	return (py);
+	p =  malloc(sizeof(char) * (length1 + length2 + 1));
+
+	if (p == NULL)
+		return (NULL);
+
+	for (i = 0; i < length1; i++)
+		p[i] = s1[i];
+	for (i = 0; i < length2; i++)
+		p[i + length1] = s2[i];
+
+	return (p);
 }
