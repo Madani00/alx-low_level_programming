@@ -12,12 +12,15 @@ char *_strdup(char *str)
 {
 	char *py;
 	int i;
-	int len = strlen(str);
+	int len = 0;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	for (i = 0; str[i]; i++)
+		len++;
 
 	py = malloc(sizeof(char) * len + 1);
 
