@@ -9,7 +9,6 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	const char *p = separator;
 	unsigned int i;
 	va_list madani;
 
@@ -17,11 +16,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		int x = va_arg(madani, int);
-
-		printf("%d", x);
+		printf("%d", va_arg(madani, int));
 		if (separator != NULL && i != n - 1)
-		printf("%s", p);
+		printf("%s", separator);
 	}
 	va_end(madani);
 	printf("\n");
