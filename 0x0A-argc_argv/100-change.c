@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the minimum number of coins
  * @argc: int
@@ -7,6 +8,7 @@
  *
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	int n;
@@ -18,13 +20,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	n = atoi(argv[1]);
-
 	if (n < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (coins = 0; n > 0 ;coins++)
+	for (coins = 0; n > 0; coins++)
 	{
 		if (n >= 25)
 		{
@@ -42,7 +43,7 @@ int main(int argc, char *argv[])
 		{
 			n -= 2;
 		}
-		else if (n >= 1)
+		else
 		{
 			n -= 1;
 		}
