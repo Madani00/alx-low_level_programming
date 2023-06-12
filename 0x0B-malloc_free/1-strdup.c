@@ -10,20 +10,24 @@
 
 char *_strdup(char *str)
 {
+	char *py;
 	int i;
-	char *p;
+	int len = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	p = malloc(sizeof(char) * 10);
 
-	if (p == NULL)
+	for (i = 0; str[i]; i++)
+		len++;
+
+	py = malloc(sizeof(char) * len + 1);
+
+	if (py == NULL)
 		return (NULL);
-	for (i = 0; i < 10; i++)
+
+	for (i = 0; i < len; i++)
 	{
-		p[i] = str[i];
+		py[i] = str[i];
 	}
-	return (p);
+	return (py);
 }
