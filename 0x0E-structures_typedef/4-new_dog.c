@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
+
 /**
  * _strlen - returns the length of a string
  * @s: string
  * Return: length
  */
+
 int _strlen(char *s)
 {
 	int len = 0;
@@ -25,15 +26,15 @@ int _strlen(char *s)
  * Return: The pointer to dest.
  */
 
-char *_strcopy(char *des, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int i;
 
 	for (i = 0; src[i]; i++)
-		des[i] = src[i];
+		dest[i] = src[i];
 
-	des[i] = '\0';
-	return (des);
+	dest[i] = '\0';
+	return (dest);
 }
 /**
  * *new_dog - a function that creates a new dog.
@@ -42,7 +43,7 @@ char *_strcopy(char *des, char *src)
  * @age: age of dog
  * @owner: owner of dog
  *
- * Return: NULL or my_dog
+ * Return: NULL or d
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
