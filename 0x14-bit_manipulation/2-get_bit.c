@@ -4,7 +4,7 @@
  * get_bit - return value of bit at given index
  * @n: unsigned long int to search.
  * @index: index to return.
- * 
+ *
  * Return: value of bit at index or -1 error
  */
 
