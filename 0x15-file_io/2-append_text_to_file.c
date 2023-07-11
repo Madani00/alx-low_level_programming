@@ -3,7 +3,7 @@
 
 /**
  * append_text_to_file -appends text at the end of a file.
- * @filname: name of the file
+ * @filename: name of the file
  * @text_content: content writed in the file.
  *
  * Return: 1 if it success. -1 if it fails.
