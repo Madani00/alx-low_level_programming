@@ -37,8 +37,7 @@ void cp(const char *src, const char *dest)
 	r = read(from, buffer, 1024);
 	to = open(dest, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
-	while (r > 0)
-	{
+	do {
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
@@ -55,7 +54,7 @@ void cp(const char *src, const char *dest)
 		r = read(from, buffer, 1024);
 		to = open(dest, O_WRONLY | O_APPEND);
 
-	}
+	} while (r > 0);
 
 	if (close(from) == -1)
 	{
