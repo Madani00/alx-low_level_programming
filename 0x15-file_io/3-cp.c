@@ -16,18 +16,18 @@ int main(int ac, char *av[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	cp(av[1], av[2]);
+	_cp(av[1], av[2]);
 
 	return (0);
 }
 
 /**
- * cp - copies content from one file to another.
+ * _cp - copies content from one file to another.
  * @src: the file to copy from
  * @dest: destination
  */
 
-void cp(const char *src, const char *dest)
+void _cp(const char *src, const char *dest)
 {
 	char buffer[1024];
 	int from, to;
