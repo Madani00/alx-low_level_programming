@@ -26,3 +26,16 @@ char *_strstr(char *haystack, char *needle)
 	}
 	return (0);
 }
+
+/**
+* another way to do it.
+*
+* char *starts_with(const char *haystack, const char *needle)
+* {
+*	 while (*needle)
+*		 if (*needle++ != *haystack++)
+*			 return (NULL);
+*	 return ((char *)haystack);
+* }
+*
+*/
