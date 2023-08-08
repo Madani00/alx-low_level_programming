@@ -26,7 +26,6 @@ int main(int ac, char *av[])
  * @src: the file to copy from
  * @dest: destination
  */
-
 void _cp(const char *src, const char *dest)
 {
 	char buffer[1024];
