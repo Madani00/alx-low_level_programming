@@ -17,6 +17,6 @@ def island_perimeter(grid):
                 prim += 4
                 if k > 0 and grid[i][k-1] == 1:
                     prim -= 2
-                if grid[i][k] == 1 and grid[i-1][k] == 1:
+                if i > 0 == 1 and grid[i-1][k] == 1:
                     prim -= 2
     return prim
