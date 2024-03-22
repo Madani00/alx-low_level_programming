@@ -6,7 +6,10 @@ If there is a neighboring cell to the top or left, subtracts 2
 
 
 def island_perimeter(grid):
+    """function"""
     prim = 0
+    if len(grid) == 0:
+        return permi
 
     for i in range(len(grid)):
         for k in range(len(grid[0])):
