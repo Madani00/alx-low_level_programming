@@ -23,3 +23,21 @@ void free_list(list_t *head)
 		free(temp);
 	}
 }
+// another way to do it
+/*
+void free_list(list_t *head)
+{
+        list_t *temp;
+
+        if (head == NULL)
+                return;
+        temp = head;
+        while (temp != NULL)
+        {
+                temp = temp->next;
+                free(head->str);
+                free(head);
+                head = temp;
+        }
+}
+*/
